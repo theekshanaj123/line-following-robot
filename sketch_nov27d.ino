@@ -59,14 +59,6 @@ void setup() {
   pinMode(in1PinB, OUTPUT);
   pinMode(in2PinB, OUTPUT);
 
-  // Initialize ultrasonic sensors
-  // pinMode(TRIG1, OUTPUT);
-  // pinMode(ECHO1, INPUT);
-  // pinMode(TRIG2, OUTPUT);
-  // pinMode(ECHO2, INPUT);
-  // pinMode(TRIG3, OUTPUT);
-  // pinMode(ECHO3, INPUT);
-
   //Ir
   pinMode(irLeft, INPUT);
   pinMode(irRight, INPUT);
@@ -83,11 +75,6 @@ void setup() {
 }
 
 void loop() {
-  // Read distances
-  // double frontDistance = getUltrasonicDistance(TRIG1, ECHO1);
-  // double rightDistance = getUltrasonicDistance(TRIG2, ECHO2);
-  // double leftDistance = getUltrasonicDistance(TRIG3, ECHO3);
-
   // for (uint8_t i = 0; i < SensorCount; i++) {
   //   Serial.print(qtr.calibrationOn.minimum[i]);
   //   Serial.print('\t');
@@ -188,14 +175,3 @@ void linefollow() {
   motorControl(lsp, rsp);
   // delay(500);
 }
-
-// double getUltrasonicDistance(int trigPin, int echoPin) {
-//   digitalWrite(trigPin, LOW);
-//   delayMicroseconds(2);
-//   digitalWrite(trigPin, HIGH);
-//   delayMicroseconds(10);
-//   digitalWrite(trigPin, LOW);
-//   long duration = pulseIn(echoPin, HIGH, 30000);  // 30ms timeout
-//   double distance = duration * 0.034 / 2;         // Convert to cm
-//   return distance;
-// }
