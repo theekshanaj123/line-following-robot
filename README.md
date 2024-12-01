@@ -127,7 +127,8 @@ if (analogRead(irLeft) > 500 && analogRead(irRight) < 500) {
 3. Adjust `Kp`, `Kd`, and `Ki` if needed to improve PID performance.
 
 ## Demo Video
-*(Include a link or embed a video showing the robot in action.)*
+https://github.com/user-attachments/assets/53a96c8c-ca76-451e-b014-214ceba92ad5
+
 
 ## License
 This project is open-source under the MIT License.
