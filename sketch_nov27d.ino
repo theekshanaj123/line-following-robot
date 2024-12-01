@@ -31,10 +31,6 @@ float Kd = 0.0001;
 float Ki = 0;
 
 
-// float Kp = 0.07;
-// float Kd = 0.000;
-// float Ki = 0;
-
 // QTR Sensors configuration
 QTRSensors qtr;
 const uint8_t SensorCount = 4;
